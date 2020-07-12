@@ -29,6 +29,7 @@ export class Login extends React.Component<{}> {
       });
       return;
     }
+    localStorage.setItem("auth-token-skool", responseJSON.jwt);
     this.redirectToDashboard = true;
   }
 

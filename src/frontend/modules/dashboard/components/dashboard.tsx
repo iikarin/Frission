@@ -84,7 +84,7 @@ export class Dashboard extends React.Component<{}> {
           <Row gutter={16}>
             <Col span={6}>
               <Card>
-                <Statistic title="Folks from the same school" value={this.sameSchoolUsers - 1} />
+                <Statistic title="Folks from the same school" value={this.sameSchoolUsers} />
               </Card>
             </Col>
             <Col span={6}>
@@ -123,6 +123,7 @@ export class Dashboard extends React.Component<{}> {
           Recent posts of folks from your school
         </Typography.Title>
         <section className="recent-posts">
+          {this.sameSchoolPosts.length === 0 && "No posts here yet. :("}
           {this.sameSchoolPosts.map(post => (
             <Post post={post} />
           ))}
