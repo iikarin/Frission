@@ -13,13 +13,13 @@ export class Splash extends React.Component<SplashComponentProps> {
           <div className="splash-illustration" />
         </section>
         <section className="splash-text">
-          <Typography.Title level={2}>Frission - Connect with your schoolmates</Typography.Title>
+          <Typography.Title level={2}>Frission - Connect with schoolmates!</Typography.Title>
           <Typography.Paragraph className="splash-paragraph">
-            We all know how frustrating it can be, to not be able to interact with your friends in the way you used to
-            in school, and understandably so. Let's fix that!
+            We all know how frustrating it can be to not be able to interact with your friends at
+            school in the same way you're used too, and that's understandable. Let's fix that!
           </Typography.Paragraph>
           <Typography.Paragraph className="splash-paragraph">
-            Create an account with us and connect with your friends, make new friends, interact with them just as usually
+            Create an account with us. Connect with friends, make new friends, interact with them just as usually
             you would in your school!
           </Typography.Paragraph>
           <section className="link-buttons">
@@ -29,11 +29,11 @@ export class Splash extends React.Component<SplashComponentProps> {
               </Button>
             </Link>
             <span className="log-in-message">
-              Already have an account?
+              Or, already have an account?
             </span>
             <Link to="/auth/login">
               <Button type="default">
-                Log right in!
+                Log In!
               </Button>
             </Link>
           </section>

@@ -17,11 +17,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: path.join(path.resolve(__dirname, 'src/frontend/'), 'index.html'),
       meta: {
-        "og:title": "Skool - Don't miss out on your precious school days",
-        "twitter:title": "Skool - Don't miss out on your precious school days",
-        "og:description": "Skool is an all-in-one app for students to keep track of school work, and socialise!",
-        "description": "Skool is an all-in-one app for students to keep track of school work, and socialise!",
-        "twitter:description": "Skool is an all-in-one app for students to keep track of school work, and socialise!",
+        "og:title": "Frision - Don't miss out on your precious school days",
+        "twitter:title": "Frision - Don't miss out on your precious school days",
+        "og:description": "Frision is an all-in-one app for students to keep track of school work, and socialise!",
+        "description": "Frision is an all-in-one app for students to keep track of school work, and socialise!",
+        "twitter:description": "Frision is an all-in-one app for students to keep track of school work, and socialise!",
         "og:type": "website",
         "theme": "#202020"
       }

@@ -93,6 +93,9 @@ export const AuthRouter: React.FunctionComponent<{}> = (): JSX.Element => {
           </Route>
         </Switch>
         </Layout.Content>
+        <Layout.Footer style={{ background: "#000" }}>
+          <Typography.Title level={2} style={{ color: '#ededed' }}>Copyright Gourab Inc. 2020</Typography.Title>
+        </Layout.Footer>
       </Layout>
     </Layout>
   )
