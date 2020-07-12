@@ -1,0 +1,14 @@
+.register-page {
+  width: calc(100vw - 6rem);
+  height: calc(100vh - 6rem);
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .tip {
+    width: 26%;
+    display: block;
+    margin-bottom: .25rem;
+  }
+}

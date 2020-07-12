@@ -1,0 +1,36 @@
+.splash-page {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  .splash-illustration-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+    .splash-illustration {
+      width: 410px;
+      height: 290px;
+      background: url("../../../../resources/illustrations/undraw_social_interaction.svg");
+      background-size: cover;
+    }
+  }
+  .splash-text {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    .splash-paragraph {
+      max-width: 60%;
+    }
+
+    .link-buttons {
+      .log-in-message {
+        margin: 0 1rem;
+        opacity: .7;
+      }
+    }
+  }
+}

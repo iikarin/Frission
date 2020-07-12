@@ -1,0 +1,47 @@
+.schedule-container {
+  height: calc(100% - 2rem);
+  width: calc(100% - 2rem);
+  padding: 1rem;
+
+  .add-event-form {
+    width: 50vw;
+
+    .title-input-container {
+      width: 60%;
+    }
+  }
+
+  .events {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    .event {
+      display: flex;
+      margin: .75rem .5rem;
+      background: #ffffff;
+
+      .date-repr {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: rgba(0,0,0,.1);
+        padding: .6rem;
+        flex-direction: column;
+        width: 102px;
+  
+        .month {
+          font-size: 1.2rem;
+          font-weight: 700;
+          margin-bottom: .25rem;
+        }
+        .date {
+          font-size: 1.7rem;
+          font-weight: 300;
+        }
+      }
+      .event-body {
+        padding: 1rem;
+      }
+    }
+  }
+}

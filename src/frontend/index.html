@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <base href="/" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frission</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system,"SF Pro Text",BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji;
+    }
+    .loader-display {
+      width: 100vw;
+      height: 100vh;
+      background-color: #EDEDED;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      color: rgba(0,0,0, 0.7);
+    }
+    .loader-display .loading-heads-up {
+      font-weight: 600;
+      margin-top: 1rem;
+      font-size: 2rem;
+    }
+    .loader-display .loader,
+    .loader-display .loader:after {
+      border-radius: 50%;
+      width: 64px;
+      height: 64px;
+    }
+    .loader-display .loader {
+      font-size: 10px;
+      position: relative;
+      text-indent: -9999em;
+      border-top: 1.1em solid rgba(63, 93, 216, 0.2);
+      border-right: 1.1em solid rgba(63, 93, 216, 0.2);
+      border-bottom: 1.1em solid rgba(63, 93, 216, 0.2);
+      border-left: 1.1em solid rgb(63, 93, 216);
+      transform: translateZ(0);
+      animation: loader 1.1s infinite linear;
+    }
+    @keyframes loader {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <section data-app-mount>
+    <section class="loader-display">
+      <div class="loader"></div>
+      <div class="loading-heads-up">
+        Getting ready for the best look possible...
+      </div>
+    </section>
+  </section>
+</body>
+</html>

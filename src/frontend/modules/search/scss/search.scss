@@ -1,0 +1,13 @@
+.search-container {
+  padding: 1rem;
+  width: calc(100% - 2rem);
+  height: calc(100% - 2rem);
+
+  .user-results {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    & > * {
+      margin: .5rem;
+    }
+  }
+}
